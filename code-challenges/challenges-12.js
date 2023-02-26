@@ -73,16 +73,16 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
     // write your code here
-    return arr.filter((candidate) => {
-        return candidate.tech === 'JS' && candidate.yearsOfExperience > 4;
-      }).map((candidate) => {
-        let fullName = candidate.firstName;
-        if (candidate.LastName) {
-          fullName += ' ' + candidate.LastName;
+    return arr.filter((employee) => {
+        return employee.tech === 'JS' && employee.yearsOfExperience > 4;
+      }).map((employee) => {
+        let fullName = employee.firstName;
+        if (employee.LastName) {
+          fullName += ' ' + employee.LastName;
         }
         return {
           fullName: fullName,
-          tech: candidate.tech
+          tech: employee.tech
         };
       });
 }
