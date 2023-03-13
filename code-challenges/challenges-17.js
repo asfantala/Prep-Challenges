@@ -14,15 +14,24 @@
 // Output: [50, 41, 32, 23, 14, 5, -4, 5, 14, 23, 32, 41, 50]
 //
 
-const recursionPattern = (int1, int2, arr=[]) => {
+const recursionPattern = (int1, int2) => {
     // write your code here
-    arr.push(int1);
-  if (int1 - int2 >= 0) {
-    recursionPattern(int1 - int2, int2);
-  } else if (int1 + int2 < arr[0]) {
-    recursionPattern(int1 + int2, int2);
-  }
+    let arr=[];
+    // arr.push(int1);
+  if (int1 > 0) {
+    arr =recursionPattern(int1 - int2, int2);
+        arr.push(int1);
+        arr.unshift(int1);
   return arr;
+
+  } else if(int1<0) {
+    // recursionPattern(int1 + int2, int2);
+            arr.push(int1);
+              return arr;
+
+
+  }
+
 }
 // -------------------------------------------------------------------------------------------------------
 
