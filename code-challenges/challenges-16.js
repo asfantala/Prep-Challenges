@@ -14,12 +14,16 @@
 
 const reverseString = (string) => {
     //write your code here ...
-    const words = string.split('');
-    let revwords = words.reverse();
-    let joinwords= revwords.join('');
-    return joinwords;
+    // const words = string.split('');
+    // let revwords = words.reverse();
+    // let joinwords= revwords.join('');
+    // return joinwords;
     
-
+    let reversedString = '';
+    for (let i = string.length - 1; i >= 0; i--) {
+      reversedString += string[i];
+    }
+    return reversedString;
 }
 // -------------------------------------------------------------------------------------------------------
 
