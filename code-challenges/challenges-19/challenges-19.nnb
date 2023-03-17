@@ -1,0 +1,53 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "function aVeryBigSum(ar) {\r\n    // Write your code here\r\n    let sum =0;\r\nfor (let i =0 ; i< ar.length ; i++){\r\n    sum =sum+ar[i];\r\n}return sum;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.\r\n\r\nThe rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).\r\n\r\nThe task is to find their comparison points by comparing a[0] with b[0], a[1] with b[1], and a[2] with b[2].\r\n\r\nIf a[i] > b[i], then Alice is awarded 1 point.\r\nIf a[i] < b[i], then Bob is awarded 1 point.\r\nIf a[i] = b[i], then neither person receives a point.\r\nComparison points is the total points a person earned.\r\n\r\nGiven a and b, determine their respective comparison points."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "function compareTriplets(a, b) {\r\n    let pointsa =0;\r\n    let pointsb=0;\r\n  for (let i = 0; i < a.length; i++) {\r\n\r\nif(a[i]>b[i]){\r\n    pointsa ++;\r\n}else if(a[i] < b[i]){\r\n        pointsb ++;\r\n\r\n}}\r\nreturn [pointsa ,pointsb ];\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Complete the function solveMeFirst to compute the sum of two integers.\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "function solveMeFirst(a, b) {\r\n    // Hint: Type return a+b below  \r\n    return a+b; \r\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "2 Given an array of integers, find the sum of its elements."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "function simpleArraySum(ar) {\r\n    // Write your code here\r\n    let sum=0;\r\nfor (let i=0 ; i<ar.length;i++){\r\n     sum = sum+ar[i];\r\n}\r\nreturn sum;\r\n}"
+            ],
+            "outputs": []
+        }
+    ]
+}
