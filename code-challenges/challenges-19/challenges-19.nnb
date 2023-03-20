@@ -1,51 +1,65 @@
 {
     "cells": [
         {
-            "language": "typescript",
+            "language": "markdown",
             "source": [
-                "function aVeryBigSum(ar) {\r\n    // Write your code here\r\n    let sum =0;\r\nfor (let i =0 ; i< ar.length ; i++){\r\n    sum =sum+ar[i];\r\n}return sum;\r\n}"
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.\r\n\r\nThe rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).\r\n\r\nThe task is to find their comparison points by comparing a[0] with b[0], a[1] with b[1], and a[2] with b[2].\r\n\r\nIf a[i] > b[i], then Alice is awarded 1 point.\r\nIf a[i] < b[i], then Bob is awarded 1 point.\r\nIf a[i] = b[i], then neither person receives a point.\r\nComparison points is the total points a person earned.\r\n\r\nGiven a and b, determine their respective comparison points."
-            ],
-            "outputs": []
-        },
-        {
-            "language": "typescript",
-            "source": [
-                "function compareTriplets(a, b) {\r\n    let pointsa =0;\r\n    let pointsb=0;\r\n  for (let i = 0; i < a.length; i++) {\r\n\r\nif(a[i]>b[i]){\r\n    pointsa ++;\r\n}else if(a[i] < b[i]){\r\n        pointsb ++;\r\n\r\n}}\r\nreturn [pointsa ,pointsb ];\r\n}"
+                "### **Required**:"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "Complete the function solveMeFirst to compute the sum of two integers.\r\n\r\n"
+                "#####  [Append And Delete](https://www.hackerrank.com/challenges/append-and-delete/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
         {
-            "language": "typescript",
+            "language": "javascript",
             "source": [
-                "function solveMeFirst(a, b) {\r\n    // Hint: Type return a+b below  \r\n    return a+b; \r\n  }"
+                "function appendAndDelete(s, t, k) {\r\n    // Write your code here\r\nlet sArr = s.split(\"\")\r\n    let tArr = t.split(\"\")\r\n    let count = 0\r\n    for (let i = 0; i === count && i < s.length; i++) {\r\n        if (sArr[i] === tArr[i]) {\r\n            count++\r\n        }\r\n    }\r\n\r\n    let tMinusCount = t.length - count\r\n    let sMinusCount = s.length - count\r\n\r\n    let str = k - (tMinusCount + sMinusCount)\r\n\r\n    if (tMinusCount + sMinusCount < k && t.length + s.length > k && str % 2 !== 0) {\r\n        return \"No\"\r\n    } else if (tMinusCount + sMinusCount <= k) {\r\n        return \"Yes\"\r\n    } else {\r\n        return \"No\"\r\n    }\r\n}"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "2 Given an array of integers, find the sum of its elements."
+                "### **Optional**:"
             ],
             "outputs": []
         },
         {
-            "language": "typescript",
+            "language": "markdown",
             "source": [
-                "function simpleArraySum(ar) {\r\n    // Write your code here\r\n    let sum=0;\r\nfor (let i=0 ; i<ar.length;i++){\r\n     sum = sum+ar[i];\r\n}\r\nreturn sum;\r\n}"
+                "#####  [Encryption](https://www.hackerrank.com/challenges/encryption/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [The Time In Words](https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
             ],
             "outputs": []
         }
